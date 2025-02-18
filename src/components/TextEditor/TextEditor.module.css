@@ -1,0 +1,97 @@
+.editorWrapper {
+  position: absolute;
+  min-width: 100px;
+  min-height: 20px;
+}
+
+.editor {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 12px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  z-index: 100;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+  transition: all 0.2s;
+}
+
+.resizers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.resizer {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary);
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  pointer-events: auto;
+}
+
+.resizer:hover {
+  transform: scale(1.2);
+}
+
+.nw { top: -5px; left: -5px; cursor: nw-resize; }
+.ne { top: -5px; right: -5px; cursor: ne-resize; }
+.sw { bottom: -5px; left: -5px; cursor: sw-resize; }
+.se { bottom: -5px; right: -5px; cursor: se-resize; }
+
+.editor:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1);
+}
+
+.editor::selection {
+  background: rgba(0, 102, 255, 0.2);
+}
+
+.editor.active {
+  border-color: var(--primary);
+}
+
+.editor br {
+  display: block;
+  content: '';
+  margin-top: 0;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  padding: 4px;
+  margin: 0;
+  font-family: inherit;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Стили для ресайз-хендлера */
+.editor::-webkit-resizer {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #0066ff #0066ff transparent;
+  background: transparent;
+} 

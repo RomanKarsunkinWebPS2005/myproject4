@@ -1,0 +1,29 @@
+.deleteButton {
+  position: absolute;
+  top: -8px;
+  right: -20px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: rgba(255, 59, 48, 0.9);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.2s;
+  opacity: 0;
+  z-index: 1000;
+  transform: translate(100%, -50%);
+}
+
+.deleteButton:hover {
+  background: #ff3b30;
+  transform: translate(100%, -50%) scale(1.1);
+}
+
+*:hover > .deleteButton {
+  opacity: 1;
+} 

@@ -1,0 +1,43 @@
+.container {
+  padding: 1rem;
+  background: var(--background);
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.canvas {
+  width: 1280px; /* Меньшая базовая ширина */
+  aspect-ratio: 16/9;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  position: relative;
+  margin: 0 auto;
+}
+
+.canvas:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.element {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.textElement {
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  font-size: 1rem;
+  min-width: 100px;
+  min-height: 40px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.textElement:focus {
+  box-shadow: 0 0 0 1px var(--primary);
+  border-radius: 2px;
+} 

@@ -1,0 +1,77 @@
+.toolbar {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.select {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 80px;
+}
+
+.select:hover {
+  border-color: var(--primary);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 4px;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+}
+
+.button {
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.2s;
+  min-width: 32px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--primary);
+}
+
+.button.active {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.colorPicker {
+  width: 40px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.colorPicker:hover {
+  border-color: var(--primary);
+} 

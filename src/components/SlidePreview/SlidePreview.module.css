@@ -1,0 +1,24 @@
+.preview {
+  width: 200px;
+  height: 112px;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+  user-select: none;
+}
+
+.preview:hover {
+  border-color: var(--primary-light);
+}
+
+.selected {
+  border-color: var(--primary);
+}
+
+.dragging {
+  cursor: grabbing;
+  box-shadow: var(--shadow);
+} 

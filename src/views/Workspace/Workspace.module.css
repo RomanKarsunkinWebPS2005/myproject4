@@ -1,0 +1,44 @@
+.workspace {
+  padding: 24px;
+  height: 100%;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.slideContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+  padding: 24px;
+}
+
+.slide {
+  width: 1280px;
+  height: 720px;
+  background: white;
+  position: relative;
+  transform: scale(var(--scale));
+  transform-origin: top center;
+  box-shadow: var(--shadow);
+  cursor: default;
+}
+
+.element {
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.element:hover {
+  border-color: var(--primary);
+}
+
+.element.active {
+  border-color: var(--primary);
+} 

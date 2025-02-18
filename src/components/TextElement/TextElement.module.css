@@ -1,0 +1,54 @@
+.text {
+  padding: 4px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.editor {
+  padding: 4px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textElement {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textElement > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.textElement:not(.preview):hover > div {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: text;
+} 
